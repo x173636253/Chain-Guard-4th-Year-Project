@@ -1,0 +1,105 @@
+Link to solution:
+https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.1+commit.df193b15.js
+
+Solidity Code:
+pragma solidity >=0.7.0 <0.9.0;
+
+contract validateCode {
+    
+    /*
+        accessCode will define the level of access associated with the sender address. 
+        If the accesscode is not strong enough, the message will not send
+        
+        sendKey is going to be the public half of the cryptography system. 
+        It will be validated to doubly ensure the identity of the sender.
+    */
+    
+    function compareCode() pure public returns(bool accessBool){
+        
+        uint accessCode;
+        //bool accessBool;
+        
+        //address _from;
+        
+        
+        if (accessCode <= 2)
+        {
+            accessBool = true;
+            
+            /*
+            function(address _from) public pure returns (bytes32){
+                
+            }
+            return keccak256(abi.encodePacked(_from));
+            */
+        }
+        else
+        {
+            accessBool = false;
+        }
+    }
+        
+}
+
+contract sendHash {
+    function hashAddr(string memory _text, address _addr) public returns(bytes32){
+        validateCode val = new validateCode();
+        bool validCode; 
+        //= val.compareCode;
+        
+        if(validCode == true){
+            return keccak256(abi.encodePacked(_text, _addr));
+        }
+        else {
+            
+        }
+    }
+    
+    function hash(string memory _text, address _addr) 
+        public pure returns (bytes32)
+        {
+            return keccak256(abi.encodePacked(_text, _addr));
+        }
+    
+}
+
+/*
+        struct ReadAccess {
+        address from;
+        address to;
+        uint accessCode;
+        uint sendKey;
+        
+    }
+        
+    function hashMSG(msg.sender) 
+        public pure returns (bytes32) 
+        {
+            //string memory message = msg.sender;
+            return keccak256(abi.encodePacked(msg.sender));
+        }
+        
+        
+        
+    function keccak256(address _addr) public pure returns (bytes32){
+        
+        
+        mapping (address => bytes32) storage sendID;
+        
+        bytes32 moddedID;
+        
+        sendID[tx.origin] = moddedID;
+        
+    
+            
+        return keccak256(abi.encodePacked(_addr));
+    }
+    
+    
+contract findHash is validateCode{
+    //validateCode val = new validateCode();
+    validateCode private val;
+}
+
+
+*/

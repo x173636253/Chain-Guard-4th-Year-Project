@@ -1,0 +1,6 @@
+C:\Users\oscar\Documents\4th Year NCI\4th Year Software Project\VisualStudioRepos\4thYearBuild3\Library.Helper\bin\Debug\Library.Helper.dll
+C:\Users\oscar\Documents\4th Year NCI\4th Year Software Project\VisualStudioRepos\4thYearBuild3\Library.Helper\bin\Debug\Library.Helper.pdb
+C:\Users\oscar\Documents\4th Year NCI\4th Year Software Project\VisualStudioRepos\4thYearBuild3\Library.Helper\obj\Debug\Library.Helper.csprojAssemblyReference.cache
+C:\Users\oscar\Documents\4th Year NCI\4th Year Software Project\VisualStudioRepos\4thYearBuild3\Library.Helper\obj\Debug\Library.Helper.csproj.CoreCompileInputs.cache
+C:\Users\oscar\Documents\4th Year NCI\4th Year Software Project\VisualStudioRepos\4thYearBuild3\Library.Helper\obj\Debug\Library.Helper.dll
+C:\Users\oscar\Documents\4th Year NCI\4th Year Software Project\VisualStudioRepos\4thYearBuild3\Library.Helper\obj\Debug\Library.Helper.pdb
